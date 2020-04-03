@@ -1,0 +1,57 @@
+{
+    "name": "grizz-it/codec",
+    "description": "Encoding and decoding for PHP applications.",
+    "keywords": ["codec", "encoder", "decoder"],
+    "type": "library",
+    "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "require":
+    {
+        "php": "^7.2",
+        "ext-json": "*",
+        "ext-yaml": "*"
+    },
+    "authors": [
+    {
+        "name": "GrizzIT",
+        "homepage": "https://www.grizzit.com/",
+        "role": "Developer"
+    }],
+    "config":
+    {
+        "sort-packages": true
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "GrizzIt\\Codec\\": "src/"
+        }
+    },
+    "autoload-dev":
+    {
+        "psr-4":
+        {
+            "GrizzIt\\Codec\\Tests\\": "tests/"
+        }
+    },
+    "archive":
+    {
+        "exclude": [
+            "/tests",
+            "/.gitignore",
+            "/.travis.yml",
+            "/phpunit.xml",
+            "/phpcs.xml",
+            "/PULL_REQUEST_TEMPLATE.md",
+            "/CODE_OF_CONDUCT.md",
+            "/CONTRIBUTING.md"
+        ]
+    },
+    "require-dev":
+    {
+        "phpunit/phpunit": "^8.3",
+        "squizlabs/php_codesniffer": "^3.4"
+    }
+}
