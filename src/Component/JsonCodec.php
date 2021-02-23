@@ -15,16 +15,16 @@ use GrizzIt\Codec\Exception\DecodingException;
 class JsonCodec implements EncoderInterface, DecoderInterface
 {
     /** @var int */
-    private $depth;
+    private int $depth;
 
     /** @var int */
-    private $encodeOptions;
+    private int $encodeOptions;
 
     /** @var int */
-    private $decodeOptions;
+    private int $decodeOptions;
 
     /** @var bool */
-    private $decodeAssociative;
+    private bool $decodeAssociative;
 
     /**
      * Constructor

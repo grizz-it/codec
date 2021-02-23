@@ -15,22 +15,22 @@ use Throwable;
 class YamlCodec implements EncoderInterface, DecoderInterface
 {
     /** @var int */
-    private $encoding;
+    private int $encoding;
 
     /** @var int */
-    private $linebreak;
+    private int $linebreak;
 
     /** @var callable[] */
-    private $encodeCallbacks;
+    private array $encodeCallbacks;
 
     /** @var int */
-    private $decodePosition;
+    private int $decodePosition;
 
     /** @var callable[] */
-    private $decodeCallbacks;
+    private array $decodeCallbacks;
 
     /** @var int */
-    private $nDocs = 0;
+    private int $nDocs = 0;
 
     /**
      * Constructor

@@ -19,14 +19,14 @@ class CodecRegistry implements CodecRegistryInterface
      *
      * @var EncoderInterface[]
      */
-    private $encoders = [];
+    private array $encoders = [];
 
     /**
      * Contains the registered decoders.
      *
      * @var DecoderInterface[]
      */
-    private $decoders = [];
+    private array $decoders = [];
 
     /**
      * Register an encoder.
